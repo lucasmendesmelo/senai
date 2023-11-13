@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <title>Meu Projeto Django</title>
+  
+  <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'imagens/senai.png' %}" alt="Logo" width="150">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+  </nav>
+  
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="colum">
+          <th>Turno</th>
+          <th>Diurno</th>
+          <th>13/11/2023</th>    
+          <th></th>
+          <th></th>             
+        </tr>
+        <tr>
+            <th>Sala</th>
+            <th>Curso</th>
+            <th>Turma</th>
+            <th>Professor</th>
+            <th>Disciplina</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>Desenvolvimento de Sistemas</td>
+          <td>82715</td>
+          <td>Fulano</td>
+          <td>Mobile</td>
+        </tr>
+        <!-- Adicione mais linhas conforme necessário -->
+      </tbody>
+    </table>
+  </main>
+  
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy;  Senai 2023. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <!-- Adicione os links para os arquivos JavaScript do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
